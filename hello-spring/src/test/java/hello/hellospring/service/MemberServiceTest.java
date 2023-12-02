@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+//단위 테스트 : 순수한 자바로만 이루어져있지만 속도가 빠름 (권장됨)
 class MemberServiceTest {
 
     MemberService memberService;
@@ -29,7 +30,7 @@ class MemberServiceTest {
 
 
     @Test
-    void join() {
+    void 회원가입() {
         //given
         Member member = new Member();
         member.setName("hello");

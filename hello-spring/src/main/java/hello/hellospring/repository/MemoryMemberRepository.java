@@ -8,7 +8,7 @@ import java.util.*;
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
-    private static long sequence = 0L;
+    private static long sequence = 0L; //DB에 넣을때 id값을 하나씩 더해줌
 
     @Override
     public Member save(Member member) {
